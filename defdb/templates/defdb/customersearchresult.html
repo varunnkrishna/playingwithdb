@@ -1,0 +1,36 @@
+{% extends "defdb/index.html" %}
+
+{% block body %}
+
+<table style="background-color:powderblue">
+        
+        {% for cxd in details %}
+        <table border="0px" width="300px">
+    	<tr>
+            <td> id </td>
+    		<td>{{ cxd.cid  }}</td>
+        </tr>
+        <tr>
+            <td> Name </td>
+            <td>{{ cxd.cname }}</td>
+        </tr>
+            <td> Phone </td>
+            <td>{{ cxd.cphno }}</td>
+        <tr>
+            <td> Email </td>
+            <td>{{ cxd.cemail }}</td>
+        </tr>
+            <td> Address </td>
+            <td>{{ cxd.caddress }}</td>
+        <tr>
+            <td> State </td>
+            <td>{{ cxd.cstate }}</td>
+
+        </tr>
+
+        {% endfor %}
+
+       
+</table>
+
+{% endblock %}
